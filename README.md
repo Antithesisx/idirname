@@ -1,0 +1,4 @@
+idirname
+========
+
+Interactive dirname.
