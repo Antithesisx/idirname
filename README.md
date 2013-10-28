@@ -6,11 +6,15 @@ Interactive dirname.
 If the input is a file, output the directory containing that file. If the input is a directory, keep it unchanged and redirect it to stdout.
 
 ### Dependencies
-- wc
+- OS X users will need to install wc. GNU/Linux users probably already have it.
 
 ### Installation
-- copy idirname to your PATH; 
-- make sure it's executable.
+- Place idirname in your PATH and make sure it's executable:
+
+```
+sudo cp idirname /usr/bin/
+sudo chmod +x /usr/bin/idirname
+```
 
 ### Examples
 Example 1:
