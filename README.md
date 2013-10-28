@@ -5,6 +5,9 @@ Interactive dirname.
 
 If the input is a file, output the directory containing that file. If the input is a directory, keep it unchanged and redirect it to stdout.
 
+### Dependencies
+- wc
+
 ### Installation
 - copy idirname to your PATH; 
 - make sure it's executable.
