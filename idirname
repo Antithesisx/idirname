@@ -1,0 +1,23 @@
+#!/bin/bash
+# idirname stands for interactive dirname.
+
+# If only one argumen is given...
+if
+	[ $(echo "$@" | wc -l) -eq 1 ]
+	then
+		# If it's a directory, cd to it.
+		if
+			[ -d "$@" ]
+			then echo "$@"
+		fi
+
+		# If it's a file, cd to the directory that contains it.
+		if
+			[ -f "$@" ]
+			then echo $(dirname $@)
+		fi	
+
+	else
+		echo "idirname takes only one argument."
+fi
+
