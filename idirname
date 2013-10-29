@@ -5,16 +5,16 @@
 if
 	[ $(echo "$@" | wc -l) -eq 1 ]
 	then
-		# If it's a directory, cd to it.
+		# If it's a directory, leave the argument unchanged and redirect it to stdout.
 		if
 			[ -d "$@" ]
 			then echo "$@"
 		fi
 
-		# If it's a file, cd to the directory that contains it.
+		# If it's a file, get the directory that contains it and redirect that to stdout.
 		if
 			[ -f "$@" ]
-			then echo $(dirname $@)
+			then echo "$(dirname "$@")"
 		fi	
 
 	else
