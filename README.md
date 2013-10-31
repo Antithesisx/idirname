@@ -26,7 +26,7 @@ Output:
 - Place idirname in your PATH and make sure it's executable:
 
 ```
-sudo cp idirname /usr/bin/
-sudo chmod +x /usr/bin/idirname
+sudo cp idirname /usr/local/bin/
+sudo chmod +x /usr/local/bin/idirname
 ```
 
